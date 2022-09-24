@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Brand, CTA, Navbar, Register, Useless } from "./components";
+import {
+  Blog,
+  Features,
+  Footer,
+  Header,
+  Possibility,
+  Hackovision,
+  Qr,
+  PaymentLayout,
+  Mentor,
+  Card,
+  Animated,
+  Kavita,
+} from "./containers";
+import "./App.css";
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar />
+          <Header />
+          <Features />
+        </div>
+
+        <Hackovision />
+        <PaymentLayout />
+        <Brand />
+        <Routes>
+          <Route path="/kavita" element={<Kavita />} />
+        </Routes>
+
+        {/* <Mentor/> */}
+        <Card />
+        <Possibility />
+
+        {/* <Animated/> */}
+
+        <Register />
+        <Qr />
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

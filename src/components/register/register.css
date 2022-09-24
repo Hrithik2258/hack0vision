@@ -1,0 +1,80 @@
+.hackavision__whackavision-feature {
+  
+    justify-content: center;
+    line-height: 15px;
+}
+
+/* Customizing feature component as per needs */
+.hackavision__whackavision-feature .hackavision__features-container__feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.hackavision__whackavision-feature .hackavision__features-container_feature-text {
+    max-width: 700px;
+}
+
+.gpt3__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.gpt3__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-left: 6px;
+    justify-content: center;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.hrithik{
+font-size: large;
+font-weight: 500;
+}
+.gpt3__features-container__feature-titleh1{
+    color: whitesmoke;
+}
+.hackavision__header-content h1{
+color:white;
+}
+.gradient__text{
+    font-size: 35px;
+    line-height: 35px;
+}
+@media screen and (max-width: 650px) {
+    .hackavision__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width:300px) {
+    
+ .hackavision__whackavision-feature{
+        line-height: 30px;
+    }
+}
